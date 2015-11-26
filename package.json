@@ -1,0 +1,92 @@
+{
+  "name": "react-grid-layout",
+  "version": "0.8.5",
+  "description": "A draggable and resizable grid layout with responsive breakpoints, for React.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "jsxhint lib/ test/",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "bash build.sh",
+    "build-example": "webpack --config webpack-examples.config.js; node ./examples/generate.js",
+    "dev": "echo 'Open http://localhost:4002'; webpack-dev-server --config webpack-dev-server.config.js --hot --progress --colors --port 4002 --content-base .",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/STRML/react-grid-layout.git"
+  },
+  "keywords": [
+    "react",
+    "grid",
+    "drag",
+    "draggable",
+    "resize",
+    "resizable",
+    "fluid",
+    "responsive"
+  ],
+  "author": {
+    "name": "Samuel Reed",
+    "email": "samuel.trace.reed@gmail.com",
+    "url": "http://strml.net/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/STRML/react-grid-layout/issues"
+  },
+  "homepage": "https://github.com/STRML/react-grid-layout",
+  "dependencies": {
+    "deep-equal": "^1.0.0",
+    "object-assign": "^2.0.0",
+    "react-draggable": "github:strml/react-draggable#v0.3.3",
+    "react-resizable": "^0.3.2"
+  },
+  "devDependencies": {
+    "babel": "^5.0.1",
+    "babel-core": "^5.0.1",
+    "babel-loader": "^5.0.0",
+    "babel-runtime": "^5.0.1",
+    "css-loader": "^0.9.1",
+    "ejs": "^2.3.1",
+    "exports-loader": "^0.6.2",
+    "imports-loader": "^0.6.3",
+    "jsxhint": "^0.14.0",
+    "lodash": "^3.6.0",
+    "pre-commit": "^1.0.6",
+    "precommit-hook": "^2.0.1",
+    "react": "^0.13.1",
+    "react-clonewithprops": "^1.0.1",
+    "react-hot-loader": "^1.2.4",
+    "style-loader": "^0.9.0",
+    "webpack": "^1.7.3",
+    "webpack-dev-server": "^1.8.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "gitHead": "2c916b3164bffc57d543cd4272f91dde69cf8546",
+  "_id": "react-grid-layout@0.8.5",
+  "_shasum": "ff96294bf0d2086a8a3b563ceeee130f0a8d74d2",
+  "_from": "react-grid-layout@>=0.8.5 <0.9.0",
+  "_npmVersion": "2.13.1",
+  "_nodeVersion": "2.4.0",
+  "_npmUser": {
+    "name": "strml",
+    "email": "samuel.trace.reed@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "strml",
+      "email": "samuel.trace.reed@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "ff96294bf0d2086a8a3b563ceeee130f0a8d74d2",
+    "tarball": "http://registry.npmjs.org/react-grid-layout/-/react-grid-layout-0.8.5.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/react-grid-layout/-/react-grid-layout-0.8.5.tgz"
+}
